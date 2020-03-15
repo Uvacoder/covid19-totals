@@ -1,0 +1,21 @@
+{
+  "name": "COVID-19 Stats 🦠",
+  "short_name": "COVID-19 Stats 🦠",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "Another website showing real-time worldwide stats about coronavirus.",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}
