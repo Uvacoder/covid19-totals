@@ -13,7 +13,7 @@ const Countries = props => {
             {item.location}
           </Heading>
           <Text fontSize='md' color="gray.500">
-            Deaths: <b>{item.deaths.format()}</b>
+            Deaths: <b>{item.deaths.format()} {item.deaths < 1 ? '🎉' : ''}</b>
           </Text>
           <Text fontSize='md' color="gray.500">
             Recovered: <b>{item.recovered.format()}</b>
