@@ -1,4 +1,5 @@
 import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/core";
+import Number from '../libs/format';
 
 const Countries = props => {
   return (
