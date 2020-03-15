@@ -25,7 +25,7 @@ const Stats = props => {
           <StatNumber fontSize="4xl" fontWeight={800}>
             <CountUp separator="," end={props.metrics.confirmed} />
           </StatNumber>
-          <StatLabel color="gray.500" fontSize="md">
+          <StatLabel color="gray.500" fontSize="md" fontWeight="600">
             Confirmed 🤒
           </StatLabel>
         </Stat>
@@ -33,7 +33,7 @@ const Stats = props => {
           <StatNumber fontSize="4xl" fontWeight={800}>
             <CountUp separator="," end={props.metrics.deaths} />
           </StatNumber>
-          <StatLabel color="gray.500" fontSize="md">
+          <StatLabel color="gray.500" fontSize="md" fontWeight="600">
             Deaths 😵
           </StatLabel>
         </Stat>
@@ -41,7 +41,7 @@ const Stats = props => {
           <StatNumber fontSize="4xl" fontWeight={800}>
             <CountUp separator="," end={props.metrics.recovered} />
           </StatNumber>
-          <StatLabel color="gray.500" fontSize="md">
+          <StatLabel color="gray.500" fontSize="md" fontWeight="600">
             Recovered 🙂
           </StatLabel>
         </Stat>

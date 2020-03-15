@@ -23,7 +23,7 @@ const Layout = ({children}) => {
   return (
     <Box bg={bg[colorMode]} color={color[colorMode]}>
       <Flex alignItems="center" px={8}>
-        <Heading mx='auto' my={8}>
+        <Heading fontSize='4xl' mx='auto' my={8}>
            🦠 COVID-19 Stats
         </Heading>
         <Link href="https://stopcorona.org/" isExternal>

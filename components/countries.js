@@ -3,7 +3,7 @@ import Number from '../libs/format';
 
 const Countries = props => {
   return (
-    <SimpleGrid columns={[2, 4, 6]} spacing={12} p={6} mt={4}>
+    <SimpleGrid columns={[2, 4, 6]} spacing={8} p={6} mt={4}>
       {props.countries_list.map((item, index) => (
         <Box key={index}>
           <Heading size="md" mb={2}>
@@ -12,10 +12,10 @@ const Countries = props => {
             </Text>{" "}
             {item.location}
           </Heading>
-          <Text color="gray.600">
+          <Text fontSize='md' color="gray.500">
             Deaths: <b>{item.deaths.format()}</b>
           </Text>
-          <Text color="gray.600">
+          <Text fontSize='md' color="gray.500">
             Recovered: <b>{item.recovered.format()}</b>
           </Text>
         </Box>

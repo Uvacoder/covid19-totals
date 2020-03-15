@@ -3,7 +3,7 @@ import { Box, Text, Link } from "@chakra-ui/core";
 const Footer = props => {
   return (
     <>
-      <Box p={5} textAlign='right' lineHeight={1.8} fontSize='xs'>
+      <Box p={5} textAlign='right' lineHeight={1.8} fontSize='sm'>
         <Text>
           Made with{" "}
           <Text color="red.500" as="span">
