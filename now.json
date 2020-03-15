@@ -1,9 +1,6 @@
 {
   "version": 2,
   "name": "covid19-stats",
-  "alias": [
-    "covid19-stats"
-  ],
   "routes": [
     {
       "src": "^/service-worker.js$",
