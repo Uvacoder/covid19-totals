@@ -7,7 +7,7 @@ const Footer = props => {
         <Text>
           Made with{" "}
           <Text color="red.500" as="span">
-            ♥
+            😷
           </Text>{" "}
           in Germany 🇩🇪 by{" "}
           <Link href="//diego.earth" isExternal>
