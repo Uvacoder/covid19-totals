@@ -3,6 +3,7 @@ import {
   Flex,
   IconButton,
   Heading,
+  Link,
   useColorMode
 } from "@chakra-ui/core";
 
@@ -21,21 +22,31 @@ const Layout = ({children}) => {
   };
   return (
     <Box bg={bg[colorMode]} color={color[colorMode]}>
-      <Flex alignItems="center" justifyContent="space-between" px={8}>
-        <Heading mx="auto" textAlign="center" my={8}>
-          COVID-19 Stats 🦠
+      <Flex alignItems="center" px={8}>
+        <Heading mx='auto' my={8}>
+           🦠 COVID-19 Stats
         </Heading>
+        <Link href="https://stopcorona.org/" isExternal>
+          <IconButton
+            variant="ghost"
+            color="gray.500"
+            fontSize="18px"
+            icon="question"
+            mr="2"
+            href="https://stopcorona.org/"
+          />
+        </Link>
         <IconButton
           aria-label={`Switch to ${
             colorMode === "light" ? "dark" : "light"
           } mode`}
           variant="ghost"
-          color="current"
-          ml="2"
-          fontSize="20px"
+          color="gray.500"
+          fontSize="18px"
           onClick={toggleColorMode}
           icon={colorMode === "light" ? "moon" : "sun"}
         />
+
       </Flex>
       {children}
     </Box>
