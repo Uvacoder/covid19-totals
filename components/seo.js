@@ -1,18 +1,16 @@
 import Head from "next/head";
 
-import Number from '../libs/format';
-
 const SEO = props => {
   return (
     <>
       <Head>
-        <title>{props.confirmed.format()} cases &mdash; COVID-19 Stats 🦠</title>
+        <title>{props.title}</title>
         <meta
           name="description"
           content="Another website showing real-time worldwide stats about coronavirus."
         />
         <link rel="author" href="/humans.txt" />
-        <meta property="og:title" content="COVID-19 Stats 🦠" />
+        <meta property="og:title" content={props.title} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://covid19.diego.earth" />
         <meta
@@ -23,8 +21,11 @@ const SEO = props => {
           property="og:description"
           content="Another website showing real-time worldwide stats about coronavirus."
         />
-        https://covid19-stats.diego9.now.sh
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
     </>
   );
