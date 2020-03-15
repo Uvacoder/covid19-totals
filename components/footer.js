@@ -30,13 +30,20 @@ const Footer = props => {
         </Text>
         <Text>
           <Link
-            href="https://covid2019-api.herokuapp.com/v2/current"
+            href="https://github.com/nat236919/Covid2019API"
             color="blue.600"
             isExternal
           >
-            API Data Source
-          </Link>{" "}
-          &mdash; Latest updated:{" "}
+            API
+          </Link>{" | "}
+          <Link 
+            href="https://github.com/spacecowb0y/covid19-stats"
+            color = "blue.600"
+            isExternal 
+          >
+            Source Code
+          </Link>{" | "}
+          Latest updated:{" "}
           <Text as="mark" px={2} py={1}>
             {props.latest_updated}
           </Text>
