@@ -6,10 +6,12 @@ import Stats from "../components/stats";
 import Countries from "../components/countries";
 import Footer from "../components/footer";
 
+import Number from '../libs/format';
+
 const Home = props => {
   return (
     <Layout>
-      <SEO confirmed={props.total.data.confirmed} />
+      <SEO title={`${props.total.data.confirmed.format()} cases worldwide ― COVID-19 Stats 🦠`} />
       <Stats metrics={props.total.data} />
       <Countries countries_list={props.current.data} />
       <Footer latest_updated={props.current.dt} />
