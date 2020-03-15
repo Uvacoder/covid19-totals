@@ -1,6 +1,6 @@
 import fetch from "isomorphic-unfetch";
-import { Heading } from "@chakra-ui/core";
 
+import Layout from "../components/layout";
 import Stats from "../components/stats";
 import Countries from "../components/countries";
 import Footer from "../components/footer";
@@ -12,14 +12,11 @@ Number.prototype.format = function(n, x) {
 
 const Home = props => {
   return (
-    <>
-      <Heading textAlign="center" my={8}>
-        COVID-19 Stats 🦠
-      </Heading>
-      <Stats data={props.total.data} />
-      <Countries data={props.current.data} />
-      <Footer />
-    </>
+    <Layout>
+      <Stats metrics={props.total.data} />
+      <Countries countries_list={props.current.data} />
+      <Footer latest_updated={props.current.dt} />
+    </Layout>
   );
 };
 
@@ -30,7 +27,7 @@ Home.getInitialProps = async function() {
     "https://covid2019-api.herokuapp.com/v2/current"
   );
   const current = await query_current.json();
-
+  
   const query_total = await fetch(
     "https://covid2019-api.herokuapp.com/v2/total"
   );

@@ -2,8 +2,8 @@ import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/core";
 
 const Countries = props => {
   return (
-    <SimpleGrid columns={[2, 4, 6]} spacing={6} p={6} mt={4}>
-      {props.data.map((item, index) => (
+    <SimpleGrid columns={[2, 4, 6]} spacing={12} p={6} mt={4}>
+      {props.countries_list.map((item, index) => (
         <Box key={index}>
           <Heading size="md" mb={2}>
             <Text color="red.500" fontWeight="normal" as="span">
