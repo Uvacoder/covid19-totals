@@ -18,7 +18,7 @@ const Countries = props => {
           </Heading>
           <Text fontSize='md' color="gray.500" lineHeight={1.7}>
             <Box as={item.deaths == 0 ? AiOutlineSmile : AiOutlineFrown} size="18px" display="inline" mr={1} />
-            {item.deaths == 1 ? '1 deadth' : `${item.deaths.format()} deaths`}{" "}
+            {item.deaths == 1 ? '1 death' : `${item.deaths.format()} deaths`}{" "}
           </Text>
           <Text fontSize='md' color="gray.500" lineHeight={1.7}>
             <Box as={AiOutlineSmile} size="18px" display="inline" mr={1} />
