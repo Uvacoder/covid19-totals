@@ -1,4 +1,8 @@
 import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/core";
+import {
+  AiOutlineFrown,
+  AiOutlineSmile,
+} from "react-icons/ai";
 import Number from '../libs/format';
 
 const Countries = props => {
@@ -12,11 +16,13 @@ const Countries = props => {
             </Text>{" "}
             {item.location}
           </Heading>
-          <Text fontSize='md' color="gray.500">
-            Deaths: <b>{item.deaths == 0 ? '0 🎉' : item.deaths.format()}</b>
+          <Text fontSize='md' color="gray.500" lineHeight={1.7}>
+            <Box as={item.deaths == 0 ? AiOutlineSmile : AiOutlineFrown} size="18px" display="inline" mr={1} />
+            {item.deaths == 1 ? '1 deadth' : `${item.deaths.format()} deaths`}{" "}
           </Text>
-          <Text fontSize='md' color="gray.500">
-            Recovered: <b>{item.recovered.format()}</b>
+          <Text fontSize='md' color="gray.500" lineHeight={1.7}>
+            <Box as={AiOutlineSmile} size="18px" display="inline" mr={1} />
+            {item.recovered.format()} recovered 
           </Text>
         </Box>
       ))}
