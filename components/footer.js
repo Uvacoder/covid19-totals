@@ -9,9 +9,9 @@ const Footer = props => {
           <Text color="red.500" as="span">
             😷
           </Text>{" "}
-          in Germany 🇩🇪 by{" "}
-          <Link href="//diego.earth" isExternal>
-            Diego Peralta
+          in USA by{" "}
+          <Link href="//github.com/uvacoder" isExternal>
+            Uvacoder
           </Link>
         </Text>
         <Text>
@@ -30,14 +30,14 @@ const Footer = props => {
         </Text>
         <Text>
           <Link
-            href="https://github.com/nat236919/Covid2019API"
+            href="https://github.com/uvacoder/covid19-stats"
             color="blue.600"
             isExternal
           >
             API
           </Link>{" | "}
           <Link 
-            href="https://github.com/spacecowb0y/covid19-stats"
+            href="https://github.com/uvacoder/covid19-stats"
             color = "blue.600"
             isExternal 
           >
